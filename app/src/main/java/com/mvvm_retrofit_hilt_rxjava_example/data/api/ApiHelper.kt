@@ -1,0 +1,9 @@
+package com.mvvm_retrofit_hilt_rxjava_example.data.api
+
+import com.mvvm_retrofit_hilt_rxjava_example.data.model.User
+import io.reactivex.Single
+
+interface ApiHelper {
+    fun getUsers(): Single<List<User>>
+
+}
